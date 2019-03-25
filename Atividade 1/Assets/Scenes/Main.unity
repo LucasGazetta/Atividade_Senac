@@ -1847,7 +1847,9 @@ GameObject:
   - component: {fileID: 1047528308}
   - component: {fileID: 1047528311}
   - component: {fileID: 1047528310}
+  - component: {fileID: 1047528314}
   - component: {fileID: 1047528312}
+  - component: {fileID: 1047528313}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -1911,7 +1913,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1047528307}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.51, y: -3.1, z: -9.501589}
+  m_LocalPosition: {x: -9.51, y: -3.1, z: -1}
   m_LocalScale: {x: 0.34, y: 0.318, z: 1}
   m_Children:
   - {fileID: 41283447}
@@ -1932,7 +1934,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.12650037, y: 0.033812284}
+  m_Offset: {x: 0.12650037, y: 1.8598318}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1943,7 +1945,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.55824, y: 7.719847}
+  m_Size: {x: 2.55824, y: 4.067808}
   m_EdgeRadius: 0
 --- !u!50 &1047528311
 Rigidbody2D:
@@ -1964,8 +1966,8 @@ Rigidbody2D:
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 1
-  m_Constraints: 0
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!114 &1047528312
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1984,7 +1986,7 @@ MonoBehaviour:
   m_AirControl: 1
   m_WhatIsGround:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 4294967295
   m_GroundCheck: {fileID: 41283447}
   m_CeilingCheck: {fileID: 860204231}
   m_CrouchDisableCollider: {fileID: 0}
@@ -1998,6 +2000,36 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: CharacterController2D+BoolEvent, Assembly-CSharp, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &1047528313
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1047528307}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a1a4d8418ee8404b935503a8affd41f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controller: {fileID: 1047528312}
+  runSpeed: 60
+--- !u!58 &1047528314
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1047528307}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.06325385, y: -1.9950957}
+  serializedVersion: 2
+  m_Radius: 1.6286787
 --- !u!1 &1081051963
 GameObject:
   m_ObjectHideFlags: 0
