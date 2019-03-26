@@ -30,6 +30,7 @@ public class PlayerMovement : MonoBehaviour
             jump = true;
             animator.SetBool("isJumping", true);
         }
+
     }
 
     public void OnLanding()
@@ -42,5 +43,6 @@ public class PlayerMovement : MonoBehaviour
         //mover o personagem
         controller.Move(horizontalMove * Time.fixedDeltaTime, false, jump);
         jump = false;
+        
     }
 }

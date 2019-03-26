@@ -4,22 +4,35 @@ using UnityEngine;
 
 public class Weapon : MonoBehaviour
 {
-
+    public Animator animator;
     public Transform firePoint;
     public GameObject bulletPrefab;
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown("Fire1"))
+        //checa se está na animação de correr
+        if (!animator.GetCurrentAnimatorStateInfo(0).IsTag("correr"))
         {
-            Shoot();
+            if (Input.GetButtonDown("Fire1"))
+            {
+                Shoot();
+                animator.SetTrigger("Shoot");
+            }
         }
-    }
+        else
+        {
+            if (Input.GetButtonDown("Fire1"))
+            {
+                Shoot();
+            }
+            }
+        }
 
     void Shoot()
     {
         // logica do tiro
+        
         Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
     }
 }
