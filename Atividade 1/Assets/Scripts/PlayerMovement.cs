@@ -12,6 +12,12 @@ public class PlayerMovement : MonoBehaviour
 
     float horizontalMove = 0f;
     bool jump = false;
+
+    private void Start()
+    {
+        animator.SetBool("isJumping", false);
+        animator.SetFloat("Speed", 0f);
+    }
     // Update is called once per frame
     void Update()
     {
