@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 513207180587356750}
   - component: {fileID: 2285051603527794164}
   - component: {fileID: 8004902872171316403}
+  - component: {fileID: 2107506746113751413}
   m_Layer: 0
   m_Name: Bala
   m_TagString: Untagged
@@ -102,7 +103,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 1
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!58 &2285051603527794164
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -113,12 +114,12 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0056898524, y: 0.030285679}
+  m_Offset: {x: 0.034081377, y: 0.030285679}
   serializedVersion: 2
-  m_Radius: 0.33689457
+  m_Radius: 0.36528608
 --- !u!114 &8004902872171316403
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -133,3 +134,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 20
   rb: {fileID: 513207180587356750}
+--- !u!95 &2107506746113751413
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2727997777531646471}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4df528a55e2d715489642128b3b50a50, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
