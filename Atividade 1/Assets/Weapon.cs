@@ -22,17 +22,22 @@ public class Weapon : MonoBehaviour
         }
         else
         {
-            if (Input.GetButtonDown("Fire1"))
-            {
-                Shoot();
-            }
-            }
+            ClicarAtirar();
         }
+    }
+
+    void ClicarAtirar()
+    {
+        if (Input.GetButtonDown("Fire1"))
+        {
+            Shoot();
+        }
+    }
 
     void Shoot()
     {
-        // logica do tiro
-        
-        Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+        // logica do asset do tiro
+            Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+
     }
 }
