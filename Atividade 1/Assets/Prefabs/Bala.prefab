@@ -134,6 +134,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 20
   rb: {fileID: 513207180587356750}
+  impactEffect: {fileID: 4728868906811946998, guid: a7bd9f6c1a9609d44bb37f97c8bd3819,
+    type: 3}
 --- !u!95 &2107506746113751413
 Animator:
   serializedVersion: 3
