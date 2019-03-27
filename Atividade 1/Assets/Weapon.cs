@@ -37,7 +37,7 @@ public class Weapon : MonoBehaviour
     void Shoot()
     {
         // logica do asset do tiro
-            Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+           Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
 
     }
 }
